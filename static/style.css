@@ -1,0 +1,82 @@
+/* Cargil Bot */
+
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,900');
+
+  /* Reset */
+
+  html, body, div, p, hr,
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  	padding: 0;
+  	border: 0;
+  	font-size: 100%;
+  	font: inherit;
+  	vertical-align: baseline;
+    box-sizing: border-box;
+  }
+
+  /* Base */
+
+  body {
+    font: 16px 'Raleway', 'HelveticaNeue', arial, sans-serif;
+    color: #4d4d4d;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+
+  /* Header */
+
+  header.main-header {
+    background-image: linear-gradient(45deg, #27AE60, #2ECC71);
+    text-align: center;
+    line-height: 50px;
+    padding: 10px 20px;
+    box-shadow: 0 0 50px 36px #fff;
+    position: relative;
+    z-index: 100;
+  }
+
+  header.main-header .logo {
+    width: 143px;
+    height: 50px;
+    background: url('cargill.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+  }
+
+  header.main-header h1 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  /* App */
+
+  div.stage {
+    height: calc(100vh - 70px);
+    padding: 50px 0 0 0;
+    overflow: auto;
+  }
+
+  @media (max-width: 750px) {
+    header.main-header {
+      text-align: right;
+      padding: 10px;
+      line-height: 40px;
+    }
+
+    header.main-header .logo {
+      width: 115px;
+      height: 40px;
+    }
+
+    header.main-header h1 {
+      font-size: 16px;
+    }
+
+    div.stage {
+      height: calc(100vh - 60px);
+      padding: 30px 0 0 0;
+    }
+  }
